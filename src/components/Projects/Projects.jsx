@@ -55,7 +55,7 @@ const Projects = () => {
                         className="cta-btn cta-btn--hero"
                         href={url || '#!'}
                       >
-                        {txtBtn || 'See Live'}
+                        {txtBtn || 'See landing page'}
                       </a>
 
                       {repo && (
