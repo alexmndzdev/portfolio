@@ -109,7 +109,7 @@ export const projectsData = [
 export const contactData = {
   cta: '',
   btn: '',
-  email: '',
+  email: 'alejandro.mendez.developer@gmail.com',
 };
 
 // FOOTER DATA
@@ -128,7 +128,7 @@ export const footerData = {
     {
       id: nanoid(),
       name: 'linkedin',
-      url: '​https://www.linkedin.com/in/alejandro-méndez-cobián-6a103413a',
+      url: 'https://www.linkedin.com/in/alejandro-méndez-cobián-6a103413a',
     },
     {
       id: nanoid(),
