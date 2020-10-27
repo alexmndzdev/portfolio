@@ -9,7 +9,7 @@ export const headData = {
 
 // HERO DATA
 export const heroData = {
-  title: 'Hi, I\'m',
+  title: "Hi, I'm",
   name: 'Alejandro Méndez',
   subtitle: 'And learning is my passion',
   cta: '',
@@ -41,7 +41,7 @@ export const projectsData = [
     info2: '',
     txtBtn: '',
     url: 'https://www.okboy.app/',
-    repo: ''
+    repo: '',
   },
   {
     id: nanoid(),
@@ -53,7 +53,7 @@ export const projectsData = [
     info2: '',
     txtBtn: '',
     url: 'https://tuchib.com/',
-    repo: ''
+    repo: '',
   },
   {
     id: nanoid(),
@@ -65,7 +65,7 @@ export const projectsData = [
     info2: '',
     txtBtn: '',
     url: 'https://www.numina.mx/',
-    repo: ''
+    repo: '',
   },
   {
     id: nanoid(),
@@ -77,7 +77,7 @@ export const projectsData = [
     info2: '',
     txtBtn: '',
     url: 'https://cerebrosm.com/',
-    repo: ''
+    repo: '',
   },
   {
     id: nanoid(),
@@ -89,7 +89,7 @@ export const projectsData = [
     info2: 'I was working with Frontend too, with Jquery.',
     txtBtn: 'See live',
     url: 'https://www.segurosarca.com/',
-    repo: ''
+    repo: '',
   },
   {
     id: nanoid(),
@@ -98,10 +98,11 @@ export const projectsData = [
     info: `Since it was my first professional project I was
     working with little features, fixing bugs, little features, etc. Using Vue in Envioclickpro and PHP
     in both projects.`,
-    info2: 'I really learned a lot in this project since I was working with 2 senior’s developers with really great feedback.',
+    info2:
+      'I really learned a lot in this project since I was working with 2 senior’s developers with really great feedback.',
     txtBtn: 'See live',
     url: 'https://www.envioclick.com/mx',
-    repo: ''
+    repo: '',
   },
 ];
 

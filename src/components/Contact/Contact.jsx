@@ -21,7 +21,11 @@ const Contact = () => {
               target="_blank"
               rel="noopener noreferrer"
               className="cta-btn cta-btn--resume"
-              href={email ? `mailto:${email}?subject=Contacto%20desde%20portafolio%20-%20` : 'https://github.com/cobidev/react-simplefolio'}
+              href={
+                email
+                  ? `mailto:${email}?subject=Contacto%20desde%20portafolio%20-%20`
+                  : 'https://github.com/cobidev/react-simplefolio'
+              }
             >
               {btn || "Let's Talk"}
             </a>
