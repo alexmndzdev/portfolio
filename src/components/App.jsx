@@ -28,7 +28,6 @@ function App() {
       key: alanKey,
       onCommand: ({ command }) => {
         if (command === 'Download') {
-          alert('Descargando...')
           window.open('https://drive.google.com/uc?download=export&id=1_3sx3BjfnqDJOzTllliknOhb8w1uHXh5', '_blank')
         }
       }
