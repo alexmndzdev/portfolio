@@ -24,7 +24,7 @@ export const aboutData = {
   environment if it is possible.`,
   paragraphThree: `I’m always caring about the scalability of my code and I love
   to give and receive feedback.`,
-  resume: 'https://www.resumemaker.online/es.php', // if no resume, the button will not show up
+  resume: 'https://drive.google.com/uc?download=export&id=1_3sx3BjfnqDJOzTllliknOhb8w1uHXh5',
 };
 
 // PROJECTS DATA

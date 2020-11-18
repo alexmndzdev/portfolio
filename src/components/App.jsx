@@ -8,7 +8,7 @@ import Footer from './Footer/Footer';
 import { PortfolioProvider } from '../context/context';
 
 import { heroData, aboutData, projectsData, contactData, footerData } from '../mock/data';
-import alanBtn from '@alan-ai/alan-sdk-web';
+//import alanBtn from '@alan-ai/alan-sdk-web';
 
 function App() {
   const [hero, setHero] = useState({});
@@ -24,6 +24,7 @@ function App() {
     setProjects([...projectsData]);
     setContact({ ...contactData });
     setFooter({ ...footerData });
+    const alanBtn = require('@alan-ai/alan-sdk-web');
     alanBtn({
       key: alanKey,
       onCommand: ({ command }) => {
