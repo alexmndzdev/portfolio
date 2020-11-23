@@ -124,7 +124,7 @@ export const footerData = {
     {
       id: nanoid(),
       name: 'codepen',
-      url: '',
+      url: 'https://codepen.io/alexmndzdev',
     },
     {
       id: nanoid(),
