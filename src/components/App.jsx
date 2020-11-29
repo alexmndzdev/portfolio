@@ -16,13 +16,13 @@ function App() {
   const [projects, setProjects] = useState([]);
   const [contact, setContact] = useState({});
   const [footer, setFooter] = useState({});
-  const params = new URLSearchParams(window.location.search);
-  const referred = params.get('referred');
-  const isFromWorkana = referred === 'workana' || document.referrer.includes('workana');
   const alanKey = '8ea6e8b5dedfb4de5e2cf8e770d32a5b2e956eca572e1d8b807a3e2338fdd0dc/stage';
 
   useEffect(() => {
     setHero({ ...heroData });
+    const params = new URLSearchParams(window.location.search);
+    const referred = params.get('referred');
+    const isFromWorkana = referred === 'workana' || document.referrer.includes('workana');
     setAbout({ ...aboutData, isFromWorkana });
     setProjects([...projectsData]);
     setContact({ ...contactData });
@@ -43,8 +43,8 @@ function App() {
       <Hero />
       <About />
       <Projects />
-      { !isFromWorkana ? <Contact /> : null }
-      { !isFromWorkana ?  <Footer /> : null }
+      { !about.isFromWorkana ? <Contact /> : null }
+      { !about.isFromWorkana ?  <Footer /> : null }
     </PortfolioProvider>
   );
 }
