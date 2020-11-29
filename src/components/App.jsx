@@ -8,7 +8,6 @@ import Footer from './Footer/Footer';
 import { PortfolioProvider } from '../context/context';
 
 import { heroData, aboutData, projectsData, contactData, footerData } from '../mock/data';
-//import alanBtn from '@alan-ai/alan-sdk-web';
 
 function App() {
   const [hero, setHero] = useState({});
@@ -16,7 +15,7 @@ function App() {
   const [projects, setProjects] = useState([]);
   const [contact, setContact] = useState({});
   const [footer, setFooter] = useState({});
-  const alanKey = '8ea6e8b5dedfb4de5e2cf8e770d32a5b2e956eca572e1d8b807a3e2338fdd0dc/stage';
+  //  const alanKey = '8ea6e8b5dedfb4de5e2cf8e770d32a5b2e956eca572e1d8b807a3e2338fdd0dc/stage';
 
   useEffect(() => {
     setHero({ ...heroData });
@@ -27,15 +26,15 @@ function App() {
     setProjects([...projectsData]);
     setContact({ ...contactData });
     setFooter({ ...footerData });
-    const alanBtn = require('@alan-ai/alan-sdk-web');
-    alanBtn({
-      key: alanKey,
-      onCommand: ({ command }) => {
-        if (command === 'Download') {
-          window.open('https://drive.google.com/uc?download=export&id=1_3sx3BjfnqDJOzTllliknOhb8w1uHXh5', '_blank')
-        }
-      }
-    })
+    //    const alanBtn = require('@alan-ai/alan-sdk-web');
+    //    alanBtn({
+    //      key: alanKey,
+    //      onCommand: ({ command }) => {
+    //        if (command === 'Download') {
+    //          window.open('https://drive.google.com/uc?download=export&id=1_3sx3BjfnqDJOzTllliknOhb8w1uHXh5', '_blank')
+    //        }
+    //      }
+    //    })
   }, []);
 
   return (
@@ -43,8 +42,8 @@ function App() {
       <Hero />
       <About />
       <Projects />
-      { !about.isFromWorkana ? <Contact /> : null }
-      { !about.isFromWorkana ?  <Footer /> : null }
+      {!about.isFromWorkana ? <Contact /> : null}
+      {!about.isFromWorkana ? <Footer /> : null}
     </PortfolioProvider>
   );
 }
